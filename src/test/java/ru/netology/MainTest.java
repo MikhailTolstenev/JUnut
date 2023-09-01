@@ -6,18 +6,20 @@ import org.junit.jupiter.api.Test;
 
 class MainTest {
     private static String source;
+
     @BeforeAll
-    static void beforeAll(){
+    static void beforeAll() {
         source = "CACABABABCCCAABAC";
     }
 
     @Test
     void hasRepeats() {
         //given
-        int size =4;
+        int size = 4;
 
         //when
-        boolean result = Main.hasRepeats(source ,size);
+
+        boolean result = Main.hasRepeats(source, size);
 
         //then
         Assertions.assertTrue(result);
